@@ -13,16 +13,12 @@ digitalWrite(6, HIGH);
 void loop() { 
  
  long temp;                 //tempput from keyboard read off ptemp A5 (keyboard ptemp)
- long tolerance = 8;   //toleranceience of resistance tempput read from A5 (keyboard ptemp)
+ long tolerance = 8;        //toleranceience of resistance tempput read from A5 (keyboard ptemp)
 
   
  Serial.println(analogRead(A5)); //Serial prtempts readtempg from A5(keyboard ptemp)
  temp = analogRead(A5);
-
- //delays startup so there is no starting tone
- //delay(400);
-
- //Checks temp tempput to see what note was played
+ //Checks temp temp input to see what note was played
  if((1013 -  tolerance) < temp && temp < (1013 + tolerance)) //C1
     tone(9, 523);    
  if((994 - tolerance) < temp && temp < (994 + tolerance))    //C1#
@@ -59,11 +55,6 @@ void loop() {
     tone(9, 1319);
  if((252 - tolerance) < temp && temp < (252 + tolerance))   //E2
     tone(9, 1397);
- if(temp < 200)                                     //no note
+ if(temp < 200)                                             //no note
     noTone(9);
-    
- 
- 
- 
 }
-
