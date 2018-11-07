@@ -80,7 +80,16 @@ For my design I also used a pre-amp purchased online. To create my own, parts wo
 
 A pre-amp is needed to amplify the signal the arduino and distortion pedal produce. Without amplification, there would not be enough potential to power a speaker.
 
+#### The setup
 
+I needed a control center to operate all the parts of the synthesizer. Ultimately, I decided on using an altoids can to be my control center. I used two potentiometers(One for volume and one for distortion), and one switch (Used to turn the distortion pedal off and on).
+
+In the pictures below, you can see the final setup. The breadboard was used to connect the keyboard to the distortion pedal and to the ardunio.
+
+
+![Final Synthesizer Setup](Pictures/Synth1.JPG)
+
+![Another View of the Final Synthesizer Setup](Pictures/Synth2.JPG)
 
 
 
